@@ -1,37 +1,3 @@
-<!-- <?php
-
-include 'db.php';
-if(isset($_POST['submit-btn'])){
-  $email = $_POST['email'];
-
-  $query = $conn->query("SELECT * from subscribers where email='$email'");
-
-  $numrows = $query->num_rows;
-
-  if($numrows == 0){
-    $sql = $conn->query("INSERT INTO subscribers(email) VALUES ('$email')");
-    if($sql){
-      echo "<script type='text/javascript'>document.getElementById('one').style.display = 'flex'</script>";
-    }else{ 
-      echo '<script>
-          let two = document.getElementById("two");
-
-          two.style.display = "flex"
-
-        </script>';
-    }
-  }else{
-    echo '<script>
-          let three = document.getElementById("three");
-
-          three.style.display = "flex"
-
-        </script>';
-  }
-
-}
-? >  -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -217,28 +183,29 @@ if(isset($_POST['submit-btn'])){
     <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content">
 
+     
       <div class="mySlides">
         <div class="numbertext">1 / 5</div>
-        <img src="./assets/img/Group 33.png" style="width:100%">
+        <img src="./assets/img/Group 625.png" style="width:100%">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">2 / 5</div>
-        <img src="./assets/img/Group 34.png" style="width:100%">
+        <img src="./assets/img/Yellow.png" style="width:100%">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">3 / 5</div>
-        <img src="./assets/img/Group 35 (1).png" style="width:100%">
+        <img src="./assets/img/Yellow(8).png" style="width:100%">
       </div>
 
       <div class="mySlides">
         <div class="numbertext">4 / 5</div>
-        <img src="./assets/img/Group 39.png" style="width:100%">
+        <img src="./assets/img/Yellow(9).png" style="width:100%">
       </div>
       <div class="mySlides">
         <div class="numbertext">5 / 5</div>
-        <img src="./assets/img/Group 48.png" style="width:100%">
+        <img src="./assets/img/Yellow(9).png" style="width:100%">
       </div>
 
       <!-- Next/previous controls -->
